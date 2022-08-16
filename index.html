@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+	<title>군 가산점 계산기</title>
+    <style>
+        #roka{
+            background-color: rgba(0,0,0,0);
+            border: 0;
+            outline: 0;
+            height: 80%;
+            width: 23%;
+            display: inline;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        #roka:hover{
+            background-color: rgba(0,0,0,0);
+            filter: brightness(60%);
+            border: 0;
+            outline: 0;
+            height: 80%;
+            width: 23%;
+            display: inline;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            display: ;
+        }
+        #rokaf{
+            background-color: rgba(0,0,0,0);
+            border: 0;
+            outline: 0;
+            height: 80%;
+            width: 23%;
+            display: inline;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        #rokaf:hover{
+            background-color: rgba(0,0,0,0);
+            filter: brightness(60%);
+            border: 0;
+            outline: 0;
+            height: 80%;
+            width: 23%;
+            display: inline;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        #rokn{
+            background-color: rgba(0,0,0,0);
+            border: 0;
+            outline: 0;
+            height: 80%;
+            width: 23%;
+            display: inline;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        #rokn:hover{
+            background-color: rgba(0,0,0,0);
+            filter: brightness(60%);
+            border: 0;
+            outline: 0;
+            height: 80%;
+            width: 23%;
+            display: inline;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        #rokmc{
+            background-color: rgba(0,0,0,0);
+            border: 0;
+            outline: 0;
+            height: 80%;
+            width: 23%;
+            display: inline;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        #rokmc:hover{
+            background-color: rgba(0,0,0,0);
+            filter: brightness(60%);
+            border: 0;
+            outline: 0;
+            height: 80%;
+            width: 23%;
+            display: inline;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        #buttons{
+            text-align: center;
+        }
+        .text {
+            color: white;
+            font-size: 25px;
+            font-family:verdana, sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- NAVVAR -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1" style="font-size: 2em; font-weight: 900;"><a href="./index.html" class="text-decoration-none text-black"><img src="../Army_extra_point_calculator/img/korea.svg", style="width: 6b0px;height: 40px;">&nbsp;&nbsp;&nbsp;대한민국 군 가산점 계산기</span></a>
+        </div>
+    </nav>
+    <div id="buttons">
+        <button id="roka"> <img src="../Army_extra_point_calculator/img/roka.jpg", style="height: 100%;width: 100%;border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;"/></button>
+        <button id="rokaf"> <img src="../Army_extra_point_calculator/img/rokaf.jpg", style="height: 100%;width: 100%;border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;"/></button>
+        <button id="rokn"> <img src="../Army_extra_point_calculator/img/rokn.jpg", style="height: 100%;width: 100%;border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;"/></button>
+        <button id="rokmc"> <img src="../Army_extra_point_calculator/img/rokmc.jpg", style="height: 100%;width: 100%;border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;"/></button>
+    </div>
+    <!-- FOOTER -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                </a>
+                <span class="mb-3 mb-md-0 text-muted">© 2022 Chae Siheon</span>
+            </div>
+
+            <div class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <a href="https://github.com/SiHeonChae/Army_extra_point_calculator" class="text-muted text-decoration-none">
+                    <i class="bi bi-github" style="font-size: 2em;"></i>
+                </a>
+            </div>
+            </footer>
+    </div> 
+</body>
+
+</html>
